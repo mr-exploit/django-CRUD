@@ -1,0 +1,14 @@
+@hostname = http://127.0.0.1
+@port = 8000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+@modifiedBy = {{$processEnv USERNAME}}
+
+###
+
+@name = hello
+
+GET https://{{host}}
+
+GET http://127.0.0.1:8000/
